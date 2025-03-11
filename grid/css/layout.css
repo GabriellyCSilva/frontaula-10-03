@@ -1,0 +1,47 @@
+.container {
+    margin: 1rem auto;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 10vh 20vh 20vh 15vh 10vh;
+    gap: 1rem;
+}
+
+.border { border: 1px solid #ccc; }
+
+.header {
+    grid-area: herader;
+}
+.main {
+    grid-area: main;
+}
+.article1 {
+    grid-area: article1;
+}
+.article2 {
+    grid-area: article2;
+}
+.section1 {
+    grid-area: section1;
+}
+.section2 {
+    grid-area: section2;
+}
+.section3 {
+    grid-area: section3;
+}
+.footer {
+    grid-area: footer;
+}
+
+.container{
+    grid-template-areas:
+    "header header header header"
+    "main main main main"
+    "article1 article1 article2 article2"
+    "section1 section2 section2 section3"
+    "footer footer footer footer"
+    ;
+    
+}/*podemos colocar letra ao vez do nome, não necessariamente precisa ser o nome/*
+
